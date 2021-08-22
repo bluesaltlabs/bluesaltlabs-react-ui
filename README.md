@@ -13,3 +13,11 @@ npm run storybook
 ```
 
 ---
+
+
+## To Do
+
+- [ ] set up `[storybookjs/storybook-deployer](https://github.com/storybookjs/storybook-deployer)` and deploy this to a GitHub Pages project.
+- [ ] ... 
+
+---

@@ -1,0 +1,40 @@
+//card bg-default d-flex justify-content-center align-items-center position-relative item-hover__fade-child box-shadow-dark-1 item-hover-grow__outline align-content-center overflow-hidden
+
+@import '../styles/mixins/item-hover'
+
+.HoverBox {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border: none;
+
+  position: relative;
+
+  @include item-hover-grow-outline;
+
+  .HoverBoxIcon {
+    display: block;
+    height: 100%;
+
+    img { height: auto; }
+  }
+
+  .HoverBoxTitle {
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: transparent;
+
+    width: 100%;
+    height: 100%;
+
+    color: rgba($text-body, 0);
+  }
+
+  &:hover {
+    .HoverBoxTitle {
+      background: rgba(0, 0, 0, 0.25);
+      color: rgba($text-body, 1);
+    }
+  }
+}

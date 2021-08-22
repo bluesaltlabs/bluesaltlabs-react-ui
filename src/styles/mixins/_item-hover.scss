@@ -1,0 +1,91 @@
+@import '../variables/colors';
+@import '../variables/transitions';
+
+@mixin item-hover-grow-base() {
+  display: block;
+  border: none;
+  outline: none;
+
+  -webkit-transition: -webkit-transform $transition-simple-1;
+  transition: transform $transition-simple-1;
+
+  &:hover,
+  &:active,
+  &.selected {
+    &, & a { text-decoration: none; }
+
+    -webkit-transform: scale($item-hover-scale);
+    transform: scale($item-hover-scale);
+  }
+}
+
+@mixin item-hover-grow-bg() {
+  background-color: rgba($dark, 0);
+
+  -webkit-transition: background-color $transition-1, -webkit-transform  $transition-simple-1;
+  transition: background-color $transition-1, transform  $transition-simple-1;
+
+  &:hover,
+  &:active,
+  &.selected {
+    background-color: rgba($dark, 0.15);
+  }
+}
+
+@mixin item-hover-grow-outline() {
+  border-radius: 0;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    border: 2px solid rgba($cyan, 0);
+
+    -webkit-transition: border-radius $transition-1, border-color $transition-1;
+    transition: border-radius $transition-1, border-color $transition-1;
+  }
+
+  -webkit-transition: border-radius $transition-1, -webkit-transform  $transition-simple-1;
+  transition: border-radius $transition-1, transform  $transition-simple-1;
+
+  &:hover,
+  &:active,
+  &.selected {
+    border-radius: 3px;
+    &:after {
+      border-radius: 3px;
+      border-color: rgba($cyan, 0.9);
+    }
+  }
+}
+
+.item-hover-grow,
+.item-hover-grow__bg {
+  @include item-hover-grow-base;
+  @include item-hover-grow-bg;
+}
+
+.item-hover-grow__outline {
+  @include item-hover-grow-base;
+  @include item-hover-grow-outline;
+}
+
+.item-hover__fade-child {
+
+  & > .faded-child {
+    opacity: 0;
+    -webkit-transition: opacity $transition-1;
+    transition: opacity $transition-1;
+  }
+
+  &:hover,
+  &:active,
+  &.selected {
+    & > .faded-child { opacity: 1; }
+  }
+}
