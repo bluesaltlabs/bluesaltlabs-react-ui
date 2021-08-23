@@ -1,13 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 //import './HoverBox.scss'
 
 import { HoverBoxTitle } from '../HoverBoxTitle/HoverBoxTitle'
 
-export function HoverBox(props) {
-  const {
-    width, height, title, href, onClick, className, style, margin, children, ...rest
-  } = props
-
+export const HoverBox = ({ width, height, title, href, onClick, className, style, margin, children, ...props }) => {
   let calculatedWidth   = parseInt(width) > -1 ? parseInt(width) : 0
   let calculatedHeight  = parseInt(width) > -1 ? parseInt(width) : 0
 
@@ -22,8 +19,22 @@ export function HoverBox(props) {
     role: (href || onClick ? "button" : undefined),
     style: combinedStyle,
     title: title,
-    ...(rest ?? {})
+    ...(props ?? {})
   }
 
   return React.createElement((href ? 'a' : 'div'), boxProps, children ?? <HoverBoxTitle title={title} />)
+}
+
+HoverBox.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  margin: PropTypes.number,
+  onClick: PropTypes.func,
+}
+
+HoverBox.defaultProps = {
+  margin: 6,
+  width: 200,
+  height: undefined,
+  onClick: undefined,
 }

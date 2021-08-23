@@ -3,7 +3,7 @@ import React from 'react';
 import { HoverBox } from './HoverBox'
 
 //👇 Imports the Button stories
-import * as HoverBoxTitleStories from '../HoverBoxTitle/HoverBoxTitle.stories'
+//import * as HoverBoxTitleStories from '../HoverBoxTitle/HoverBoxTitle.stories'
 
 //https://storybook.js.org/tutorials/intro-to-storybook/react/en/composite-component/
 
@@ -23,7 +23,7 @@ const DefaultTitleChild = ({ title }) => (
 */
 
 Primary.args = { 
-    title: [{ ...HoverBoxTitleStories.Primary.args, title: "HoverBox" }],
+   // title: [{ ...HoverBoxTitleStories.Primary.args, title: "HoverBox" }],
     width: 200, 
     height: -1,
     title: "HoverBox",
