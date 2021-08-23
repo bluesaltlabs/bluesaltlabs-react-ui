@@ -1,7 +1,7 @@
 import React from 'react'
 //import './HoverBox.scss'
 
-import { HoverBoxTitle } from './HoverBoxTitle'
+import { HoverBoxTitle } from '../HoverBoxTitle/HoverBoxTitle'
 
 export function HoverBox(props) {
   const {

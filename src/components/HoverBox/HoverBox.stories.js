@@ -3,7 +3,7 @@ import React from 'react';
 import { HoverBox } from './HoverBox'
 
 //👇 Imports the Button stories
-import * as HoverBoxTitleStories from './HoverBoxTitle.stories';
+import * as HoverBoxTitleStories from '../HoverBoxTitle/HoverBoxTitle.stories'
 
 //https://storybook.js.org/tutorials/intro-to-storybook/react/en/composite-component/
 
