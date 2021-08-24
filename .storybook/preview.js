@@ -1,4 +1,5 @@
 import { blueSaltLabsTheme } from './themes'
+import '!style-loader!css-loader!sass-loader!./scss-loader.scss';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,7 +10,7 @@ export const parameters = {
     }
   },
   darkMode: {
-    current: 'light',
+    current: 'dark',
     dark: blueSaltLabsTheme.dark,
     light: blueSaltLabsTheme.light,
   }

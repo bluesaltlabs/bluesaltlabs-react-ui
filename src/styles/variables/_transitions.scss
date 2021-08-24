@@ -1,0 +1,26 @@
+$enable-transitions: true;
+
+/*************************************/
+/* Transitions                       */
+/*************************************/
+$trans-simple-default: cubic-bezier(0, 0, .58, 1);
+$trans-cubic-default: cubic-bezier(.25, .8, .25, 1);
+
+$trans-speed-0: 100ms;
+$trans-speed-1: 200ms;
+$trans-speed-2: 350ms;
+$trans-speed-3: 500ms;
+
+$transition-0: $trans-speed-0 $trans-cubic-default;
+$transition-1: $trans-speed-1 $trans-cubic-default;
+$transition-2: $trans-speed-2 $trans-cubic-default;
+$transition-3: $trans-speed-3 $trans-cubic-default;
+
+$transition-simple-0: $trans-speed-0 $trans-simple-default;
+$transition-simple-1: $trans-speed-1 $trans-simple-default;
+$transition-simple-2: $trans-speed-2 $trans-simple-default;
+$transition-simple-3: $trans-speed-3 $trans-simple-default;
+
+$transition-base: all $transition-2;
+
+$item-hover-scale: 1.025;

@@ -1,0 +1,115 @@
+/*************************************/
+/* Colors                            */
+/*************************************/
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$off-white: #f4f4f7;
+$blue: #273995;
+$indigo: #263345;
+$purple: #ad2fa7;
+$pink: #f66D9b;
+$red: #cd2d25;
+$orange: #e1750a;
+$yellow: #ffc013;
+$green: #8fbc41;
+$teal: #4dc0b5;
+$cyan: #4774ba;
+$turquoise: #00405C;
+$gray: #666666;
+$mid-gray: mix($gray, $off-white, 33%);
+$light-gray: mix($gray, $off-white, 12.5%);
+$light: $gray-100;
+$dark: #212529;
+$muted: #6c757d;
+
+$body-bg: #f2f7fd;
+
+$white: #ffffff;
+$black: #000000;
+
+$colors: () !default;
+$colors: map-merge((
+  "off-white":  $off-white,
+  "turquoise": $turquoise,
+  "mid-gray": $mid-gray,
+  "light-gray": $light-gray,
+  "muted": $muted,
+), $colors);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+
+
+/*************************************/
+/* Text Colors                       */
+/*************************************/
+$text-body: $dark;
+$text-muted: $muted !important;
+$text-white: $white !important;
+$text-blue: $blue !important;
+$text-cyan: $cyan !important;
+$text-gray: $gray !important;
+$text-mid-gray: $mid-gray !important;
+$text-light-gray: $light-gray !important;
+
+
+/*************************************/
+/* Background Colors                 */
+/*************************************/
+$bg-default: $body-bg !important;
+$bg-off-white: $off-white !important;
+$bg-white: $white !important;
+$bg-gray: $gray !important;
+$bg-mid-gray: $mid-gray !important;
+$bg-light-gray: $light-gray !important;
+$bg-black: $black !important;
+$bg-dark: $dark !important;
+$bg-blue: $blue !important;
+$bg-cyan: $cyan !important;
+$bg-indigo: $indigo !important;
+$bg-turquoise: $turquoise !important;
+
+$border-color: $gray-300;

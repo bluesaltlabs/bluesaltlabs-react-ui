@@ -1,0 +1,38 @@
+@import 'colors';
+
+$enable-shadows: true;
+
+/*************************************/
+/* Box Shadows                       */
+/*************************************/
+
+$shadow-gray: darken($gray, 15%);
+
+$box-shadow-0: 0px 0px 0px rgba($shadow-gray,0), 0px 0px 0px rgba($shadow-gray,0);
+$box-shadow-1: 0 1px 3px rgba($shadow-gray,0.12), 0 1px 2px rgba($shadow-gray,0.24);
+$box-shadow-2: 0 3px 6px rgba($shadow-gray,0.16), 0 3px 6px rgba($shadow-gray,0.23);
+$box-shadow-3: 0 10px 20px rgba($shadow-gray,0.19), 0 6px 6px rgba($shadow-gray,0.23);
+$box-shadow-4: 0 14px 28px rgba($shadow-gray,0.25), 0 10px 10px rgba($shadow-gray,0.22);
+$box-shadow-5: 0 19px 38px rgba($shadow-gray,0.30), 0 15px 12px rgba($shadow-gray,0.22);
+
+$box-shadow-0-inset: inset 0px 0px 0px rgba($shadow-gray,0), inset 0px 0px 0px rgba($shadow-gray,0);
+$box-shadow-1-inset: inset 0 1px 3px rgba($shadow-gray,0.12), inset 0 1px 2px rgba($shadow-gray,0.24);
+$box-shadow-2-inset: inset 0 3px 6px rgba($shadow-gray,0.16), inset 0 3px 6px rgba($shadow-gray,0.23);
+$box-shadow-3-inset: inset 0 10px 20px rgba($shadow-gray,0.19), inset 0 6px 6px rgba($shadow-gray,0.23);
+$box-shadow-4-inset: inset 0 14px 28px rgba($shadow-gray,0.25), inset 0 10px 10px rgba($shadow-gray,0.22);
+$box-shadow-5-inset: inset 0 19px 38px rgba($shadow-gray,0.30), inset 0 15px 12px rgba($shadow-gray,0.22);
+
+$box-shadow-dark-0: 0px 0px 0px rgba($black,0), 0px 0px 0px rgba($black,0);
+$box-shadow-dark-1: 0 1px 3px rgba($black,0.12), 0 1px 2px rgba($black,0.24);
+$box-shadow-dark-2: 0 3px 6px rgba($black,0.16), 0 3px 6px rgba($black,0.23);
+$box-shadow-dark-3: 0 10px 20px rgba($black,0.19), 0 6px 6px rgba($black,0.23);
+$box-shadow-dark-4: 0 14px 28px rgba($black,0.25), 0 10px 10px rgba($black,0.22);
+$box-shadow-dark-5: 0 19px 38px rgba($black,0.30), 0 15px 12px rgba($black,0.22);
+
+$box-shadow-dark-0-inset: inset 0px 0px 0px rgba($black,0), inset 0px 0px 0px rgba($black,0);
+$box-shadow-dark-1-inset: inset 0 1px 3px rgba($black,0.12), inset 0 1px 2px rgba($black,0.24);
+$box-shadow-dark-2-inset: inset 0 3px 6px rgba($black,0.16), inset 0 3px 6px rgba($black,0.23);
+$box-shadow-dark-3-inset: inset 0 10px 20px rgba($black,0.19), inset 0 6px 6px rgba($black,0.23);
+$box-shadow-dark-4-inset: inset 0 14px 28px rgba($black,0.25), inset 0 10px 10px rgba($black,0.22);
+$box-shadow-dark-5-inset: inset 0 19px 38px rgba($black,0.30), inset 0 15px 12px rgba($black,0.22);
+
