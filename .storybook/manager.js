@@ -1,6 +1,6 @@
 import { addons } from '@storybook/addons'
-import { themes } from '@storybook/theming'
-import { DefaultTheme } from './Themes'
+
+import { blueSaltLabsTheme } from './themes'
 
 addons.setConfig({
   isFullscreen: false,
@@ -9,7 +9,7 @@ addons.setConfig({
   panelPosition: 'bottom',
   enableShortcuts: true,
   isToolshown: true,
-  theme: DefaultTheme,
+  theme: blueSaltLabsTheme,
   selectedPanel: undefined,
   initialActive: 'sidebar',
   sidebar: {

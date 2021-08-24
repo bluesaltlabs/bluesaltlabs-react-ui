@@ -1,4 +1,4 @@
-import { themes } from '@storybook/theming'
+import { blueSaltLabsTheme } from './themes'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,8 +9,8 @@ export const parameters = {
     }
   },
   darkMode: {
-    current: 'dark',
-    dark: themes.dark,
-    light: themes.normal
+    current: 'light',
+    dark: blueSaltLabsTheme.dark,
+    light: blueSaltLabsTheme.light,
   }
 }
