@@ -4,6 +4,6 @@ export function Boolean(props) {
     const { fieldKey, fieldValue, disabled, onChange, ...rest } = props
 
     return (
-        <span>Boolean Input Component</span>
+        <span>Boolean Field Component</span>
     )
 }

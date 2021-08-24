@@ -18,6 +18,7 @@ npm run storybook
 ## To Do
 
 - [ ] set up `[storybookjs/storybook-deployer](https://github.com/storybookjs/storybook-deployer)` and deploy this to a GitHub Pages project.
+- [ ] set up configuration to use '@' imports (like main application. need to modify webpack config?)
 - [ ] ... 
 
 ---
